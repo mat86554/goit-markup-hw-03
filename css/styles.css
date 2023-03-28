@@ -77,12 +77,10 @@ font-style: normal;
 font-weight: 800;
 font-size: 18px;
 line-height: 1.17;
-display: flex;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--actient-color-);
 margin-right: 76px;
-align-items: baseline;
 }
 
 
@@ -163,8 +161,8 @@ border: none;
 }
 
 .hero-btn:hover, .hero-btn:focus {
-    background-color: var(--hover-color);
-    }
+background-color: var(--hover-color);
+}
 
 
 
@@ -177,6 +175,15 @@ border: none;
 .visually-hidden {
 clip-path: inset(50%);
 height: 1px;
+position: absolute;
+white-space: nowrap;
+width: 1px;
+overflow: hidden;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+margin: -1px;
+
 }
 
 .feature-section .list {
@@ -210,7 +217,9 @@ color: var(--main-color-text);
 
 /* ============  Третья секция "What are we doing" ============  */
 
-.possibilities-section .container {padding-bottom: 120px;}
+.possibilities-section {
+padding-bottom: 120px;
+}
 
 .possibilities-section .list {
 display: flex;
@@ -327,6 +336,7 @@ margin-top: 16px;
 
 .portfolio-section {
 padding-bottom: 120px;
+padding-top: 96px;
 }
 
 .filters-list {
